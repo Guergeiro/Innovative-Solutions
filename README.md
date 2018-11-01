@@ -6,7 +6,7 @@ Idea:
 - A team contained by 3 ~ 4 people
 - It sells web solutions
 
-## Analysis
+### Analysis
 - Target-group?
   - Anyone who wants to implement a web solution but doesn't have the necessary skills to do it
 - Expectations/Tasks
@@ -23,13 +23,13 @@ Idea:
   - Dark grey (almost black) to ease user's eyes
   - ...
 
-## Functionalities
+### Functionalities
 - Browse through all the solutions
 - Buy a solution (up until a point)
 - Contact the team
 - Search portfolio
 
-## Requirements
+### Requirements
 - Should have a slider with at least 3 images that slide automatically (on timer)
 - A responsive navbar with submenus
 - Date and time in all pages of the website (using JavaScript) 
