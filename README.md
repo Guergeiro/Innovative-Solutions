@@ -23,12 +23,13 @@ Idea:
   - Dark grey (almost black) to ease user's eyes
   - ...
 
-- Functionalities?
-  - Browse through all the solutions
-  - Buy a solution (up until a point)
-  - Contact the team
-  - Search portfolio
+## Functionalities
+- Browse through all the solutions
+- Buy a solution (up until a point)
+- Contact the team
+- Search portfolio
 
-- Requirements
-  - Should have a slider with at least 3 images that slide automatically
-  - 
+## Requirements
+- Should have a slider with at least 3 images that slide automatically (on timer)
+- A responsive navbar with submenus
+- Date and time in all pages of the website (using JavaScript) 
