@@ -1,0 +1,25 @@
+/* This file serves for coloring all the tags that have the corresponding classes, just like Bootstrap */
+
+.text-dark {
+	color: #343a40;
+}
+
+.text-light {
+	color: #f8f9fa;
+}
+
+.text-green {
+	color: #28a745;
+}
+
+.bg-dark {
+	background-color: #343a40;
+}
+
+.bg-light {
+	background-color: #f8f9fa;
+}
+
+.bg-green {
+	background-color: #28a745;
+}
