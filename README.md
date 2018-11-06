@@ -21,7 +21,7 @@ Idea:
 - What will be the main colors of the website?
   - Light grey (almost white) to ease user's eyes
   - Dark grey (almost black) to ease user's eyes
-  - ...
+  - Green
 
 ### Functionalities
 - Browse through all the solutions

@@ -9,27 +9,70 @@
 	<link rel="stylesheet" href="css/core.css">
 	<link rel="stylesheet" href="css/color.css">
 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	 crossorigin="anonymous">
+
 	<title>Home - Portfolio</title>
 </head>
 
 <body class="bg-light">
+	<nav class="bg-dark text-light">
+		<a href="index.htm">
+			H
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+			 crossorigin="anonymous">ome
+		</a>
+
+		<button role="button" type="button" id="navbar-toggler">
+			<i class="fas fa-bars"></i>
+		</button>
+
+		<ul id="myNavbar">
+			<li>Portfolio</li>
+			<li>Team</li>
+			<li>Contact</li>
+		</ul>
+	</nav>
+
 	<header class="bg-green">
 		Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt similique soluta, at porro facilis magnam! Quos,
 		earum! Aliquid nihil nulla voluptatem quod delectus atque est, temporibus voluptas architecto exercitationem quas
 		laboriosam nostrum doloribus vero, hic commodi. Voluptatem esse voluptates, officiis odit molestias fugiat autem unde
 		in quae, delectus eius iure?
 	</header>
-	<nav class="bg-dark">
-
-	</nav>
 
 	<main>
-
 	</main>
+	<!-- Section A -->
+	<section id="a">
 
+	</section>
+
+	<!-- Section B -->
+	<section id="b">
+
+	</section>
+
+	<!-- Section C -->
+	<section id="c">
+
+	</section>
 	<footer>
-
 	</footer>
+
+	<script>
+		const menuBtn = document.querySelector("#navbar-toggler");
+		const menuDiv = document.querySelector("#myNavbar");
+		menuBtn.addEventListener("click", collapse_navbar);
+
+		function collapse_navbar() {
+			if (menuDiv.style.display === "block") {
+				menuDiv.style.display = "none";
+			} else {
+				menuDiv.style.display = "block";
+			}
+		}
+	</script>
 </body>
 
 </html>
