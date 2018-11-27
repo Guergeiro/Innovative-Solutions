@@ -4,33 +4,53 @@
 	font-family: "Ubuntu", sans-serif;
 }
 
+.container {
+	width: 75%;
+	margin: 0 auto;
+}
+
 nav {
-	position: sticky;
-	width: 100%;
-	height: 3.5rem;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
 	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	transition: 0.5s;
 }
 
 nav a {
+	display: block;
 	text-decoration: none;
 	color: inherit;
+	font-size: 2rem;
+	text-align: right;
+	margin: 1rem;
+	transition: 0.5s;
 }
 
-nav ul {
-	display: none;
-	background-color: inherit;
-	color: inherit;
-	text-align: center;
+nav a:hover {
+	color: #6c757d;
 }
 
-nav ul li {
-	padding: 1rem;
+main {
+	transition: 0.5s;
 }
 
-nav button {
-	float: right;
-	padding: 0.5rem;
-	color: inherit;
-	background-color: inherit;
+button#navButton {
+	min-width: 3.5rem;
+	max-width: 3.5rem;
+	min-height: 2.5rem;
+	max-height: 2.5rem;
 	border: none;
+	margin: 1rem 0;
+	background-color: transparent;
+	position: fixed;
+	transition: 0.5s;
+	z-index: 1;
+}
+
+button#navButton:hover {
+	cursor: pointer;
 }
