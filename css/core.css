@@ -34,10 +34,6 @@ nav a:hover {
 	color: #6c757d;
 }
 
-main {
-	transition: 0.5s;
-}
-
 button#navButton {
 	min-width: 3.5rem;
 	max-width: 3.5rem;
@@ -53,4 +49,47 @@ button#navButton {
 
 button#navButton:hover {
 	cursor: pointer;
+}
+
+main {
+	transition: 0.5s;
+}
+
+main section {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main section#section-a {
+	text-transform: uppercase;
+	text-align: center;
+	background-image: url("/img/bg-header.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+main section#section-a h1 {
+	font-size: 10vw;
+}
+
+main section#section-a h1:first-of-type {
+	letter-spacing: 0.3vw;
+}
+
+main section#section-a h3 {
+	font-style: italic;
+	text-transform: lowercase;
+	font-size: 5vw;
+	color: #f8f9fa;
+	text-shadow: 2px 2px 1vw #343a40;
+}
+
+main section#section-a h5 {
+	transform-origin: center;
+	transform: translate(-40%, 500%) rotate(-90deg);
+	font-size: 2vw;
 }
