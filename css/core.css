@@ -74,22 +74,34 @@ main section#section-a {
 
 main section#section-a h1 {
 	font-size: 10vw;
+	font-family: 'Montserrat', sans-serif;
 }
 
 main section#section-a h1:first-of-type {
-	letter-spacing: 0.3vw;
+	letter-spacing: 0.5vw;
 }
 
 main section#section-a h3 {
+	font-family: "Open Sans Condensed", sans-serif;
+	font-weight: 300;
 	font-style: italic;
-	text-transform: lowercase;
 	font-size: 5vw;
+	text-transform: lowercase;
 	color: #f8f9fa;
-	text-shadow: 2px 2px 1vw #343a40;
+	text-shadow: 0.2vw 0.2vw 0.5vw #343a40;
 }
 
 main section#section-a h5 {
 	transform-origin: center;
-	transform: translate(-40%, 500%) rotate(-90deg);
+	transform: translate(-45%, 500%) rotate(-90deg);
 	font-size: 2vw;
+}
+
+main section#section-a h5 span {
+	background-color: #343a40;
+	width: 8vw;
+	height: 0.3vw;
+	display: inline-block;
+	text-align: right;
+	vertical-align: baseline;
 }
