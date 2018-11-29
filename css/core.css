@@ -4,6 +4,10 @@
 	font-family: "Ubuntu", sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 .container {
 	width: 75%;
 	margin: 0 auto;
@@ -34,7 +38,7 @@ nav a:hover {
 	color: #6c757d;
 }
 
-button#navButton {
+button.moveButton {
 	min-width: 3.5rem;
 	max-width: 3.5rem;
 	min-height: 2.5rem;
@@ -47,7 +51,31 @@ button#navButton {
 	z-index: 1;
 }
 
-button#navButton:hover {
+button.moveButton#navButton {
+	top: 0;
+}
+
+button.moveButton#scrollButton {
+	border-radius: 50%;
+	min-width: 2.5rem;
+	max-width: 2.5rem;
+	margin: 1rem;
+	color: #f8f9fa;
+	background-color: #343a40;
+	opacity: 0;
+	bottom: 0;
+	right: 0;
+}
+
+button#navButton i {
+	transition: 0.5s;
+}
+
+button#navButton i.close {
+	transform: rotate(180deg);
+}
+
+button.moveButton:hover {
 	cursor: pointer;
 }
 
