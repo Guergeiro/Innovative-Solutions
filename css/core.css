@@ -13,6 +13,10 @@ html {
 	margin: 0 auto;
 }
 
+.clearfix {
+	clear: both;
+}
+
 nav {
 	height: 100%;
 	width: 0;
@@ -92,10 +96,26 @@ main section {
 	align-items: center;
 }
 
-footer {
-	min-height: 56px;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+footer p:first-of-type {
+	float: left;
+}
+
+footer p:last-of-type {
+	float: right;
+}
+
+footer p {
+	height: 100%;
+	max-width: 25%;
+	font-size: 0.7rem;
+	display: block;
+}
+
+footer p a {
+	text-decoration: none;
+	color: inherit;
+}
+
+footer p a:hover {
+	cursor: pointer;
 }

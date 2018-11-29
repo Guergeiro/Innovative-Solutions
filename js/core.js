@@ -3,13 +3,14 @@ window.onscroll = topChecker;
 var navButton = document.querySelector("#navButton");
 var scrollButton = document.querySelector("#scrollButton");
 var main = document.querySelector("main");
+var footer = document.querySelector("footer");
 
 /* Opens menu */
 document.querySelector("#navButton").addEventListener("click", function () {
 	if (!navButton.firstChild.classList.contains("close")) {
 		document.querySelector("nav").style.width = navButton.style.marginLeft = "200px";
-		main.style.filter = "blur(50px)";
-		main.style.cursor = "default";
+		main.style.filter = footer.style.filter = "blur(50px)";
+		main.style.cursor = footer.style.cursor = "default";
 		navButton.firstChild.classList.add("close");
 		main.addEventListener("click", close);
 		document.body.style.overflow = "hidden";
@@ -22,8 +23,8 @@ document.querySelector("#navButton").addEventListener("click", function () {
 /* Closes menu */
 function close() {
 	main.removeEventListener("click", close);
-	main.style.filter = "blur(0)";
-	main.style.cursor = "initial";
+	main.style.filter = footer.style.filter = "blur(0)";
+	main.style.cursor = footer.style.cursor = "initial";
 	document.querySelector("nav").style.width = navButton.style.marginLeft = "0";
 	navButton.firstChild.classList.remove("close");
 	document.body.style.overflow = "initial";
