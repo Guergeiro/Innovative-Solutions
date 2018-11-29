@@ -2,7 +2,7 @@ main section#section-a {
 	text-transform: uppercase;
 	text-align: center;
 	background-image: url("/img/bg-header.jpg");
-
+	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
 }
@@ -30,6 +30,7 @@ main section#section-a h5 {
 	transform-origin: center;
 	transform: translate(-45%, 500%) rotate(-90deg);
 	font-size: 2vw;
+	max-width: 100vh;
 }
 
 main section#section-a h5 span {

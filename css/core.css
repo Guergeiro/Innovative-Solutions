@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: "Ubuntu", sans-serif;
+	transition: filter 0.5s;
 }
 
 html {
@@ -11,10 +12,6 @@ html {
 .container {
 	width: 75vw;
 	margin: 0 auto;
-}
-
-.clearfix {
-	clear: both;
 }
 
 nav {
@@ -96,26 +93,33 @@ main section {
 	align-items: center;
 }
 
-footer p:first-of-type {
-	float: left;
+footer {
+	min-height: 64px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-footer p:last-of-type {
-	float: right;
-}
-
-footer p {
-	height: 100%;
-	max-width: 25%;
+footer div p {
+	width: 50%;
 	font-size: 0.7rem;
-	display: block;
 }
 
-footer p a {
+footer div p:first-of-type {
+	float: left;
+	text-align: left;
+}
+
+footer div p:last-of-type {
+	float: right;
+	text-align: right;
+}
+
+footer div p a {
 	text-decoration: none;
 	color: inherit;
 }
 
-footer p a:hover {
+footer div p a:hover {
 	cursor: pointer;
 }
