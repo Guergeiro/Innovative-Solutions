@@ -1,7 +1,7 @@
 main section#section-a {
 	text-transform: uppercase;
 	text-align: center;
-	background-image: url("/img/bg-header.jpg");
+	background-image: url("../img/bg-header.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
