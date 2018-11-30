@@ -89,15 +89,19 @@ main section {
 	min-height: 100vh;
 	width: 100%;
 	display: flex;
+	display: -webkit-flex;
 	justify-content: center;
 	align-items: center;
+	-webkit-align-item: center;
 }
 
 footer {
 	min-height: 64px;
 	display: flex;
+	display: -webkit-flex;
 	justify-content: center;
 	align-items: center;
+	-webkit-align-item: center;
 }
 
 footer div p {
