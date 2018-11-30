@@ -1,7 +1,7 @@
 main section#section-a {
 	text-transform: uppercase;
 	text-align: center;
-	background-image: url("../img/bg-header.jpg");
+	background-image: url("../img/bg-header-1.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
@@ -47,11 +47,10 @@ main section#section-a .container div {
 }
 
 main section#section-a .container div a {
-	padding: 1rem;
 	text-decoration: none;
 	border: 1px solid #28a745;
-	border-radius: 5px;
 	transition: 0.5s;
+	text-transform: initial;
 }
 
 main section#section-a .container div a:hover {

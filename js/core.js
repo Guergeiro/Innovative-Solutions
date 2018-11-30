@@ -18,7 +18,6 @@ setInterval(function () {
 		}
 		return number.toString();
 	}
-
 }, 1000);
 
 /* Adds events listener to toggle menu */
@@ -28,7 +27,7 @@ footer.addEventListener("click", closeMenu);
 
 /* Toggle menu */
 function toggleMenu() {
-	if (!navButton.firstChild.classList.contains("close")) {
+	if (!navButton.firstElementChild.classList.contains("close")) {
 		showMenu();
 	} else {
 		closeMenu();
@@ -45,7 +44,7 @@ function showMenu() {
 	main.style.cursor = footer.style.cursor = "default";
 
 	/* Adds close class */
-	navButton.firstChild.classList.add("close");
+	navButton.firstElementChild.classList.add("close");
 	document.body.style.overflow = "hidden";
 
 	/* Hide scrollButton */
@@ -62,7 +61,7 @@ function closeMenu() {
 	main.style.cursor = footer.style.cursor = "initial";
 
 	/* Removes close class */
-	navButton.firstChild.classList.remove("close");
+	navButton.firstElementChild.classList.remove("close");
 	document.body.style.overflow = "initial";
 
 	/* Tries to show scrollButton */
