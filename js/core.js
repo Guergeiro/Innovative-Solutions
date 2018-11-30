@@ -6,6 +6,21 @@ var navBar = document.querySelector("nav");
 var main = document.querySelector("main");
 var footer = document.querySelector("footer");
 
+/* Adds date to footer */
+setInterval(function () {
+	var date = new Date();
+	document.querySelector("#date").innerHTML = addZero(date.getHours()) + ":" + addZero(date.getMinutes()) + ":" + addZero(date.getSeconds());
+
+	/* Adds 0 (zero) if < 10 */
+	function addZero(number) {
+		if (number < 10) {
+			return "0" + number;
+		}
+		return number.toString();
+	}
+
+}, 1000);
+
 /* Adds events listener to toggle menu */
 navButton.addEventListener("click", toggleMenu);
 main.addEventListener("click", closeMenu);

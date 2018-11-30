@@ -11,6 +11,7 @@ html {
 
 .container {
 	width: 75vw;
+	display: block;
 	margin: 0 auto;
 }
 
@@ -104,26 +105,21 @@ footer {
 	-webkit-align-item: center;
 }
 
-footer div p {
-	width: 50%;
+footer p {
 	font-size: 0.7rem;
+	margin: 0 auto;
+	display: inline;
 }
 
-footer div p:first-of-type {
-	float: left;
-	text-align: left;
+footer p#date {
+	font-size: 1rem;
 }
 
-footer div p:last-of-type {
-	float: right;
-	text-align: right;
-}
-
-footer div p a {
+footer p a {
 	text-decoration: none;
 	color: inherit;
 }
 
-footer div p a:hover {
+footer p a:hover {
 	cursor: pointer;
 }

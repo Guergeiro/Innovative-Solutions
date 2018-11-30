@@ -4,6 +4,10 @@
 	color: #343a40;
 }
 
+.text-grey {
+	color: #6c757d;
+}
+
 .text-light {
 	color: #f8f9fa;
 }
@@ -14,6 +18,10 @@
 
 .bg-dark {
 	background-color: #343a40;
+}
+
+.bg-grey {
+	background-color: #6c757d;
 }
 
 .bg-light {
