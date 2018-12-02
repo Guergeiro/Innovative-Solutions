@@ -1,0 +1,70 @@
+main section#section-a {
+    justify-content: start;
+}
+
+main section#section-a div.container {
+    z-index: 1;
+}
+
+main section#section-a div.container h1 {
+    text-align: center;
+    margin: 1rem;
+}
+
+main section#section-a div.container p {
+    text-align: center;
+    margin: 1rem;
+}
+
+main section#section-a div:not(.container) {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    min-height: 100vh;
+}
+
+main section#section-a div:not(.container) button {
+    position: absolute;
+    border: none;
+    border-radius: 0;
+    z-index: 1;
+    top: 37.5%;
+    height: 25%;
+    width: 25%;
+    background-color: transparent;
+    transition: all 0.25s;
+}
+
+main section#section-a div:not(.container) button:hover {
+    color: #f8f9fa;
+}
+
+main section#section-a div:not(.container) button i {
+    font-size: 10vw;
+}
+
+main section#section-a div:not(.container) button#arrow-left {
+    left: 0;
+}
+
+main section#section-a div:not(.container) button#arrow-right {
+    right: 0;
+}
+
+main section#section-a div:not(.container) div.slides {
+    transition: all 0.5s;
+}
+
+main section#section-a div:not(.container) div#slide1 {
+    background-image: url("../img/bg-header-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main section#section-a div:not(.container) div#slide2 {
+    background-image: url("../img/bg-header-2.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
