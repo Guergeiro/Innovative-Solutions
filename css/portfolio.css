@@ -1,0 +1,65 @@
+main {
+    box-shadow: 5px 5px 50vh #343a40;
+}
+
+main section#section-a h2 {
+    text-align: center;
+    margin: 1rem;
+}
+
+main section#section-a p {
+    text-align: center;
+    margin: 1rem;
+}
+
+main section#section-a div {
+    width: 100%;
+    height: calc(100vh - 4rem - 66px);
+    display: block;
+    position: relative;
+}
+
+main section#section-a div button {
+    position: absolute;
+    top: 50%;
+    border: 1px solid #343a40;
+    background-color: transparent;
+    margin: 0rem 1rem;
+    transition: all 0.25s;
+    z-index: 1;
+}
+
+main section#section-a div button:hover {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+main section#section-a div button#arrow-left {
+    left: 0;
+}
+
+main section#section-a div button#arrow-right {
+    right: 0;
+}
+
+main section#section-a div .slides {
+    transition: all 0.5s;
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main section#section-a div #slide1 {
+    background-image: url("../img/bg-header-1.jpg");
+}
+
+main section#section-a>div #slide2 {
+    background-image: url("../img/bg-header-2.jpeg");
+}
+
+main section#section-a>div #slide3 {
+    background-image: url("../img/Screenshot\ from\ 2018-11-22\ 21-08-27.png");
+}

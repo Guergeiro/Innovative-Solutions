@@ -31,7 +31,7 @@ nav {
 	top: 0;
 	left: 0;
 	overflow-x: hidden;
-	transition: 0.5s;
+	transition: all 0.5s;
 }
 
 nav a {
@@ -41,7 +41,7 @@ nav a {
 	font-size: 2rem;
 	text-align: right;
 	margin: 1rem;
-	transition: 0.25s;
+	transition: all 0.25s;
 }
 
 nav div {
@@ -76,7 +76,7 @@ button.moveButton {
 	margin: 1rem 0;
 	background-color: transparent;
 	position: fixed;
-	transition: 0.5s;
+	transition: all 0.5s;
 	z-index: 1;
 }
 
@@ -97,7 +97,7 @@ button.moveButton#scrollButton {
 }
 
 button#navButton i {
-	transition: 0.5s;
+	transition: all 0.5s;
 }
 
 button#navButton i.close {
@@ -105,13 +105,14 @@ button#navButton i.close {
 }
 
 main {
-	transition: 0.5s;
+	transition: all 0.5s;
 }
 
 main section {
 	min-height: 100vh;
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 	display: -webkit-flex;
 	justify-content: center;
 	align-items: center;
@@ -142,4 +143,9 @@ footer p#date {
 footer p a {
 	text-decoration: none;
 	color: inherit;
+	transition: all 0.25s;
+}
+
+footer p a:hover {
+	color: #6c757d;
 }

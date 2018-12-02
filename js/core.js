@@ -1,14 +1,14 @@
 window.onscroll = toggleScrollButton;
 
-var navButton = document.querySelector("#navButton");
-var navBar = document.querySelector("nav");
-
-var main = document.querySelector("main");
-var footer = document.querySelector("footer");
+let navButton = document.querySelector("#navButton"),
+	navBar = document.querySelector("nav"),
+	main = document.querySelector("main"),
+	footer = document.querySelector("footer"),
+	scrollButton = document.querySelector("#scrollButton");
 
 /* Adds date to footer */
 setInterval(function () {
-	var date = new Date();
+	let date = new Date();
 	document.querySelector("#date").innerHTML = addZero(date.getHours()) + ":" + addZero(date.getMinutes()) + ":" + addZero(date.getSeconds());
 
 	/* Adds 0 (zero) if < 10 */
@@ -67,9 +67,6 @@ function closeMenu() {
 	/* Tries to show scrollButton */
 	toggleScrollButton();
 }
-
-
-var scrollButton = document.querySelector("#scrollButton");
 
 scrollButton.addEventListener("click", scrollTop);
 
