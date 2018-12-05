@@ -1,3 +1,5 @@
+/* Section A */
+
 main section#section-a {
 	text-transform: uppercase;
 	text-align: center;
@@ -59,4 +61,66 @@ main section#section-a .container div a {
 main section#section-a .container div a:hover {
 	color: #f8f9fa;
 	background-color: #28a745;
+}
+
+/* Section B */
+main section#section-b .container {
+	text-align: center;
+	margin: 5rem;
+}
+
+main section#section-b div.slideshow {
+	min-height: 50vh;
+	height: auto;
+	width: 75vw;
+	position: relative;
+}
+
+main section#section-b div.slideshow button {
+	position: absolute;
+	top: 50%;
+	font-size: 2vh;
+	border: 1px solid #343a40;
+	transition: all 0.25s;
+	border-radius: 0;
+}
+
+main section#section-b div.slideshow button:hover {
+	background-color: #1d2124;
+	border-color: #1d2124;
+}
+
+main section#section-b div.slideshow button#arrow-left {
+	left: 0;
+}
+
+main section#section-b div.slideshow button#arrow-right {
+	right: 0;
+}
+
+main section#section-b div.slideshow div.slides {
+	min-height: 100%;
+	position: absolute;
+	transition: all 0.5s;
+}
+
+main section#section-b div.slideshow div.slides#slide1 {
+	background-image: url("../img/back-end.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+main section#section-b div.slideshow div.slides#slide2 {
+	background-image: url("../img/bg-header-1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+main section#section-b div.slideshow div.slides#slide3 {
+	background-image: url("../img/bg-header-2.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }

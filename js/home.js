@@ -59,3 +59,4 @@ function resetSlider() {
 /* Start Slides */
 resetSlider();
 slides[index].style.width = "100%";
+slides[index].style.display = "block";
