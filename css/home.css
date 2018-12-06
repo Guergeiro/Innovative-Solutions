@@ -50,12 +50,16 @@ main section#section-a .container div {
 
 main section#section-a .container div a {
 	text-decoration: none;
-	border: 2px solid #28a745;
-	text-shadow: 0 0.05vw 0.5vw #343a40;
-	box-shadow: 0 0.05vw 0.5vw #343a40;
+	border: 1px solid #28a745;
+	background-color: #28a745;
 	font-weight: bolder;
 	transition: 0.5s;
 	text-transform: initial;
+}
+
+main section#section-a .container div a:hover {
+	background-color: #1e7e34 !important;
+	border-color: #1e7e34;
 }
 
 main section#section-a .container div a:hover {

@@ -1,3 +1,4 @@
+/* Slideshow */
 let slides = document.querySelectorAll(".slides"),
     leftArrow = document.querySelector("#arrow-left"),
     rightArrow = document.querySelector("#arrow-right"),
