@@ -66,7 +66,15 @@ main section#section-a .container div a:hover {
 /* Section B */
 main section#section-b .container {
 	text-align: center;
-	margin: 5rem;
+	margin: 5rem auto;
+}
+
+main section#section-b .container a {
+	margin: 5rem auto;
+	font-size: 1rem;
+	color: #f8f9fa;
+	text-align: center;
+	border-color: #28a745;
 }
 
 main section#section-b div.slideshow {
@@ -105,22 +113,55 @@ main section#section-b div.slideshow div.slides {
 }
 
 main section#section-b div.slideshow div.slides#slide1 {
-	background-image: url("../img/back-end.jpg");
+	background-image: url("../img/front-end.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 main section#section-b div.slideshow div.slides#slide2 {
-	background-image: url("../img/bg-header-1.jpg");
+	background-image: url("../img/back-end.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: left;
 }
 
 main section#section-b div.slideshow div.slides#slide3 {
-	background-image: url("../img/bg-header-2.jpeg");
+	background-image: url("../img/brand.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top;
+}
+
+main section#section-b div.slideshow div.slides h3 {
+	text-align: center;
+	font-size: 1.5rem;
+	padding: 1rem;
+}
+
+main section#section-b div.slideshow div.slides#slide1 h3 {
+	color: #343a40;
+}
+
+main section#section-b div.slideshow div.slides#slide2 h3 {
+	color: #f8f9fa;
+}
+
+main section#section-b div.slideshow div.slides#slide3 h3 {
+	color: #343a40;
+}
+
+/* Section C */
+main section#section-c div.container:first-of-type {
+	text-align: center;
+	margin: 5rem auto;
+}
+
+main section#section-c div.cardsshow {
+	width: 100%;
+	height: 33vh;
+}
+
+main section#section.c div.cardsshow div.cards {
+	margin: 0 auto;
 }
