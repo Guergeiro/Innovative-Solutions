@@ -40,7 +40,7 @@ function showMenu() {
 	navBar.style.width = navButton.style.marginLeft = "200px";
 
 	/* Adds blur effect */
-	main.style.filter = footer.style.filter = "blur(50px)";
+	main.style.opacity = footer.style.opacity = "0.3";
 	main.style.cursor = footer.style.cursor = "default";
 
 	/* Adds close class */
@@ -56,8 +56,8 @@ function closeMenu() {
 	/* Hides navbar */
 	navBar.style.width = navButton.style.marginLeft = "0";
 
-	/* Removes blur effect */
-	main.style.filter = footer.style.filter = "blur(0)";
+	/* Removes opacity effect */
+	main.style.opacity = footer.style.opacity = 1;
 	main.style.cursor = footer.style.cursor = "initial";
 
 	/* Removes close class */
@@ -78,7 +78,7 @@ function scrollTop() {
 
 /* Check current page position and shows button if necessary */
 function toggleScrollButton() {
-	if (document.body.scrollTop > window.innerHeight / 2 || document.documentElement.scrollTop > window.innerHeight / 2) {
+	if ((document.body.scrollTop > window.innerHeight / 2 || document.documentElement.scrollTop > window.innerHeight / 2) && (!navButton.firstElementChild.classList.contains("close"))) {
 		showScrollButton();
 	} else {
 		hideScrollButton();
