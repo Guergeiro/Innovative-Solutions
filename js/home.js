@@ -6,9 +6,7 @@ let slides = document.querySelectorAll(".slides"),
 
 /* Adds events listener to buttons */
 leftArrow.addEventListener("click", function () {
-    slides[index].style.right = "0";
-    slides[index].style.left = "auto";
-    slides[index].style.width = "0";
+    slides[index].style.opacity = 0;
     slides[index].firstElementChild.style.opacity = 0;
     if (index == 0) {
         index = slides.length;
@@ -17,9 +15,7 @@ leftArrow.addEventListener("click", function () {
 });
 
 rightArrow.addEventListener("click", function () {
-    slides[index].style.left = "0";
-    slides[index].style.right = "auto";
-    slides[index].style.width = "0";
+    slides[index].style.opacity = 0;
     slides[index].firstElementChild.style.opacity = 0;
     if (index == slides.length - 1) {
         index = -1;
@@ -29,25 +25,19 @@ rightArrow.addEventListener("click", function () {
 
 /* Slide left */
 function slideLeft() {
-    slides[--index].style.left = "0";
-    slides[index].style.right = "auto";
-    slides[index].style.width = "100%";
+    slides[--index].style.opacity = 1;
     slides[index].firstElementChild.style.opacity = 1;
 }
 
 /* Slide right */
 function slideRight() {
-    slides[++index].style.right = "0";
-    slides[index].style.left = "auto";
-    slides[index].style.width = "100%";
+    slides[++index].style.opacity = 1;
     slides[index].firstElementChild.style.opacity = 1;
 }
 
 /* Auto slides right */
 setInterval(function () {
-    slides[index].style.left = "0";
-    slides[index].style.right = "auto";
-    slides[index].style.width = "0";
+    slides[index].style.opacity = 0;
     slides[index].firstElementChild.style.opacity = 0;
     if (index == slides.length - 1) {
         index = -1;
@@ -58,13 +48,13 @@ setInterval(function () {
 /* Reset Slider */
 function resetSlider() {
     slides.forEach(slide => {
-        slide.style.width = "0";
+        slide.style.opacity = 0;
+        slide.style.width = "100%";
         slide.firstElementChild.style.opacity = 0;
     });
 }
 
 /* Start Slides */
 resetSlider();
-slides[index].style.width = "100%";
+slides[index].style.opacity = 1;
 slides[index].firstElementChild.style.opacity = 1;
-slides[index].style.display = "block";

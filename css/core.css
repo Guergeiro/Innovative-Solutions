@@ -48,6 +48,24 @@ a.btn-green:hover {
 	color: #f8f9fa !important;
 }
 
+button.btn-orange,
+a.btn-orange {
+	font-size: 1rem;
+	text-align: center;
+	border-color: orangered !important;
+	background-color: orangered !important;
+	margin: 1rem auto;
+	color: #f8f9fa !important;
+	transition: all 0.25s;
+}
+
+button.btn-orange:hover,
+a.btn-orange:hover {
+	border-color: red !important;
+	background-color: red !important;
+	color: #f8f9fa !important;
+}
+
 nav {
 	height: 100%;
 	width: 0;
@@ -148,7 +166,7 @@ footer p {
 	font-size: 0.8rem;
 	margin: 0 auto;
 	display: inline-block;
-	width: 33%;
+	width: calc(100%/3);
 }
 
 footer p#date {

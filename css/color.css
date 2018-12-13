@@ -16,6 +16,10 @@
 	color: #28a745;
 }
 
+.text-orange {
+	color: orangered;
+}
+
 .bg-dark {
 	background-color: #343a40;
 }
@@ -30,4 +34,8 @@
 
 .bg-green {
 	background-color: #28a745;
+}
+
+.bg-orange {
+	background-color: orangered;
 }
