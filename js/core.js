@@ -9,7 +9,7 @@ let navButton = document.querySelector("#navButton"),
 /* Adds date to footer */
 setInterval(function () {
 	let date = new Date();
-	document.querySelector("#date").innerHTML = addZero(date.getDay()) + "/" + addZero(date.getMonth()) + "/" + addZero(date.getFullYear()) + "\t" + addZero(date.getHours()) + ":" + addZero(date.getMinutes()) + ":" + addZero(date.getSeconds());
+	document.querySelector("#date").innerHTML = addZero(date.getDate()) + "/" + addZero(date.getMonth() + 1) + "/" + addZero(date.getFullYear()) + "\t" + addZero(date.getHours()) + ":" + addZero(date.getMinutes()) + ":" + addZero(date.getSeconds());
 
 	/* Adds 0 (zero) if < 10 */
 	function addZero(number) {
