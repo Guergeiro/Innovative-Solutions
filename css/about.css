@@ -1,0 +1,52 @@
+h1,
+h3 {
+	margin: 3rem;
+}
+
+p {
+	text-align: center;
+}
+
+main section#section-a div {
+	width: 75%;
+	margin: 4vw;
+}
+
+main section#section-a div h4,
+main section#section-a div p,
+main section#section-a div a {
+	text-align: right;
+	margin: 1vw;
+}
+
+main section#section-a div a {
+	float: right;
+}
+
+main section#section-a div#team2 a,
+main section#section-a div#team4 a {
+	float: left;
+}
+
+main section#section-a div img {
+	border-radius: 100%;
+	border: .2rem solid #343a40;
+	max-width: 300px;
+	max-height: 300px;
+	min-width: 100px;
+	min-height: 100px;
+	width: 25%;
+	float: left;
+}
+
+main section#section-a div#team2 img,
+main section#section-a div#team4 img {
+	float: right;
+}
+
+main section#section-a div#team2 h4,
+main section#section-a div#team2 p,
+main section#section-a div#team4 h4,
+main section#section-a div#team4 p {
+	text-align: left;
+}
