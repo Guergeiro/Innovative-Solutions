@@ -1,4 +1,21 @@
-input,
+main section#section-a h1 {
+	margin: 5rem;
+}
+
+input {
+	display: inline-block;
+}
+
+input[type=radio] {
+	width: 25%
+}
+
+label {
+	width: 75%;
+}
+
+input[type=text],
+input[type=email],
 textarea {
 	width: 100%;
 	padding: 12px;
@@ -8,4 +25,9 @@ textarea {
 	margin-top: 6px;
 	margin-bottom: 16px;
 	resize: vertical;
+}
+
+button {
+	margin: 0 auto;
+	text-align: center;
 }
