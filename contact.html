@@ -8,7 +8,7 @@
 
 	<link rel="stylesheet" href="css/color.css">
 	<link rel="stylesheet" href="css/core.css">
-	<link rel="stylesheet" href="css/travel-with-us.css">
+	<link rel="stylesheet" href="css/contact.css">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
 	 crossorigin="anonymous">
@@ -20,9 +20,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 
-	<title>Travel With Us</title>
+	<title>Contact</title>
 </head>
 
 <body class="bg-light" style="opacity: 0;">
@@ -41,7 +40,22 @@
 
 	<main class="text-dark container">
 		<section id="section-a">
-
+			<form action="">
+				<input type="radio" name="contact_reason" value="websites" checked> Websites<br>
+				<input type="radio" name="contact_reason" value="databases"> Databases<br>
+				<input type="radio" name="contact_reason" value="custom_software"> Custom Software<br>
+				<input type="radio" name="contact_reason" value="digital_marketing"> Digital Marketing<br>
+				<input type="radio" name="contact_reason" value="other"> Other<br>
+				<label for="firstname">First Name</label>
+				<input type="text" name="firstname" id="firstname" required>
+				<label for="lastname">Last Name</label>
+				<input type="text" name="lastname" id="lastname" required>
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email">
+				<label for="message">Message</label>
+				<textarea name="message" id="message" required></textarea>
+				<button type="submit">Send Message</button>
+			</form>
 		</section>
 	</main>
 

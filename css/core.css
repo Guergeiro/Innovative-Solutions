@@ -9,6 +9,7 @@ html,
 body {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
+	transition: opacity 1s;
 }
 
 button[type=button],

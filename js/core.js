@@ -1,4 +1,5 @@
-window.onscroll = toggleScrollButton;
+window.addEventListener("scroll", toggleScrollButton);
+window.addEventListener("load", addOpacity);
 
 let navButton = document.querySelector("#navButton"),
 	navBar = document.querySelector("nav"),
@@ -39,7 +40,7 @@ function showMenu() {
 	/* Shows navbar */
 	navBar.style.width = navButton.style.marginLeft = "200px";
 
-	/* Adds blur effect */
+	/* Adds opacity effect */
 	main.style.opacity = footer.style.opacity = "0.3";
 	main.style.cursor = footer.style.cursor = "default";
 
@@ -95,4 +96,9 @@ function showScrollButton() {
 function hideScrollButton() {
 	scrollButton.style.opacity = 0;
 	scrollButton.style.pointerEvents = "none";
+}
+
+/* Add opacity to body */
+function addOpacity() {
+	document.querySelector("body").style.opacity = 1;
 }
