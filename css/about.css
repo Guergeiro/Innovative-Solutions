@@ -12,11 +12,14 @@ main section#section-a div {
 	margin: 4vw;
 }
 
+main section#section-a div h4 {
+	margin: 1rem 0 0 0;
+}
+
 main section#section-a div h4,
 main section#section-a div p,
 main section#section-a div a {
 	text-align: right;
-	margin: 1vw;
 }
 
 main section#section-a div a {
@@ -37,6 +40,11 @@ main section#section-a div img {
 	min-height: 100px;
 	width: 25%;
 	float: left;
+}
+
+main section#section-a div.team {
+	box-shadow: 1px 1px 2rem #343a40;
+	padding: 1rem;
 }
 
 main section#section-a div#team2 img,

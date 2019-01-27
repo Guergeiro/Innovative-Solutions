@@ -29,7 +29,7 @@ section#section-a h1 {
 
 .modal-content {
 	position: relative;
-	box-shadow: 0.2vw 0.2vw 0.5vw #343a40;
+	box-shadow: 1px 1px 2rem #343a40;
 	-webkit-animation-name: fade;
 	-webkit-animation-duration: 0.4s;
 	animation-name: fade;
