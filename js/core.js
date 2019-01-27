@@ -79,7 +79,7 @@ function scrollTop() {
 
 /* Check current page position and shows button if necessary */
 function toggleScrollButton() {
-	if ((document.body.scrollTop > window.innerHeight / 2 || document.documentElement.scrollTop > window.innerHeight / 2) && (!navButton.firstElementChild.classList.contains("close"))) {
+	if ((document.body.scrollTop > window.innerHeight / 3 || document.documentElement.scrollTop > window.innerHeight / 3) && (!navButton.firstElementChild.classList.contains("close"))) {
 		showScrollButton();
 	} else {
 		hideScrollButton();

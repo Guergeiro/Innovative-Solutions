@@ -8,7 +8,7 @@
 
 	<link rel="stylesheet" href="css/color.css">
 	<link rel="stylesheet" href="css/core.css">
-	<link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="css/portfolio.css">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
 	 crossorigin="anonymous">
@@ -20,8 +20,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 
-	<title>Contact</title>
+	<title>Portfolio</title>
 </head>
 
 <body class="bg-light" style="opacity: 0;">
@@ -38,31 +40,45 @@
 	<button type="button" id="navButton" class="text-dark moveButton"><i id="fontawesome" class="fas fa-chevron-right fa-2x fa-fw"></i></button>
 	<button type="button" id="scrollButton" class="text-dark moveButton"><i id="fontawesome" class="fas fa-chevron-up fa-2x fa-fw"></i></button>
 
-	<main class="text-dark container">
+	<main class="text-dark">
 		<section id="section-a">
-			<h1>Contact</h1>
-			<form action="">
-				<label for="contact_reason">Contact Reason</label><br>
-				<input type="radio" name="contact_reason" value="websites" checked> Websites<br>
-				<input type="radio" name="contact_reason" value="databases"> Databases<br>
-				<input type="radio" name="contact_reason" value="custom_software"> Custom Software<br>
-				<input type="radio" name="contact_reason" value="digital_marketing"> Digital Marketing<br>
-				<input type="radio" name="contact_reason" value="other"> Other<br>
-				<br>
-				<label for="firstname">First Name</label>
-				<input type="text" name="firstname" id="firstname" required>
-				<label for="lastname">Last Name</label>
-				<input type="text" name="lastname" id="lastname" required>
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email">
-				<label for="message">Message</label>
-				<textarea name="message" id="message" required></textarea>
-				<div>
-					<button class="btn-orange" type="submit">Send Message</button>
-				</div>
-			</form>
+			<h1>Portfolio</h1>
+			<p class="text-grey">Bellow are some of our projects.</p>
+			<button type="button" class="btn-orange" id="btn-modal1"></button>
+
+			<button type="button" class="btn-orange" id="btn-modal2"></button>
 		</section>
 	</main>
+
+	<div class="modal" style="display: none;">
+		<div class="modal-content container bg-light">
+			<i class="fas fa-times text-light fa-lg"></i>
+			<div class="modal-header bg-orange">
+				<h1 class="text-light"></h1>
+			</div>
+			<div class="modal-body">
+				<h3>Author</h3>
+				<p id="author"></p>
+				<h3>Analysis</h3>
+				<p>Target-group?</p>
+				<ul>
+					<li id="target"></li>
+				</ul>
+				<p>Objectives?</p>
+				<ul>
+					<li id="objectives"></li>
+				</ul>
+				<p>Main colors of the website?</p>
+				<ul>
+					<li id="colors"></li>
+				</ul>
+				<h3>Page</h3>
+				<div style="text-align: center;">
+					<iframe src="" frameborder="0" id="page"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<footer class="bg-dark text-light">
 		<p>&copy; 2019 Inovative Solutions</p>
@@ -71,6 +87,7 @@
 			 target="_blank" rel="noopener noreferrer">pexels.com</a></p>
 	</footer>
 	<script src="js/core.js" type="text/javascript"></script>
+	<script src="js/portfolio.js" type="text/javascript"></script>
 </body>
 
 </html>
