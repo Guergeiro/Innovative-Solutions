@@ -19,7 +19,7 @@ document.querySelector("#btn-modal2").addEventListener("click", function () {
 	modal.querySelector(".modal-header").querySelector("h1").innerHTML = "Dream Play";
 	modal.querySelector(".modal-body").querySelector("#author").innerHTML = "José Monteiro & Stephane Monteiro";
 	modal.querySelector(".modal-body").querySelector("#target").innerHTML = "Anyone who is a music lover and/or has curiosity for music.";
-	modal.querySelector(".modal-body").querySelector("#objectives").innerHTML = "Build a website that allows the user to can be themselves and you find everything from top songs to top artists";
+	modal.querySelector(".modal-body").querySelector("#objectives").innerHTML = "Build a website that allows the user to be themselves and you find everything from top songs to top artists";
 	modal.querySelector(".modal-body").querySelector("#colors").innerHTML = "Dark blue + black and white as text-color to give it contrast";
 	modal.querySelector(".modal-body").querySelector("#page").src = "https://stephs10.github.io/DreamPlay/ ";
 });
