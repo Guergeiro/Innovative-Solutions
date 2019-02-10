@@ -1,4 +1,4 @@
-# Static-Website
+# Innovative Solutions
 Simple static webpage made for a subject at my college
 
 ## "We build your dream..."
